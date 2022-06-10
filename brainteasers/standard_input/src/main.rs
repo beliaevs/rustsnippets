@@ -5,7 +5,9 @@ fn main() {
     let mut input = String::new();
     stdin().read_line(&mut input).expect("Unable to read standard input");
 
-    if input == "5" {
+    println!("Input string: {:#?}", input);
+    // input string needs trimming
+    if input.trim() == "5" {
         println!("Correct!");
     } else {
         println!("Incorrect!");
